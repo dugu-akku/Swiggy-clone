@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: whitesmoke;
+}
+
+.logo{
+    margin: 10px;
+}
+
+.but , .pro{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+    background-color: whitesmoke;
+    border: none;
+    position: relative;
+    text-decoration: none;
+    color: gray;
+}
+
+button::after{
+    cursor: pointer;
+    background-color: rgb(190, 188, 188);
+    transition: .5s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    content: '';
+}
+
+button:hover::after{
+    width: 100%;
+}
+.searchbar{
+    font-size: 14px;
+    margin: 23px;
+    padding: 10px;
+    width: 500px;
+    height: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.types{
+    padding-left: 50px;
+    font-style:italic;
+}
+.Typesoffood{
+    margin-left: 60px;
+    padding: 20px;
+    cursor: pointer;
+}
+.image{
+    border-radius: 50%;
+    border: 8px solid wheat;
+}
+
+.foodname{
+    font-size: 14px;
+    color: gray;
+}
